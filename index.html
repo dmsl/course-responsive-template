@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title[ EPL371 - Systems Programming @ UCY ]</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                    <!-- Font Awesome Icons -->
+                    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+                        <!-- Bootstrap -->
+                        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+                            <!-- Custom -->
+                            <link href="css/custom.css" rel="stylesheet">
+
+                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                <!--[if lt IE 9]>
+                                 <script src="js3/html5shiv.js"></script>
+                                 <script src="js3/respond.min.js"></script>
+                                 <![endif]-->
+
+                                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                                <script src="js/jquery.min.js"></script>
+
+                                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                                <script src="js/bootstrap.min.js"></script>
+                                <script src="js/menucollapse.js"></script>
+
+                                <!-- Navigation -->
+                                <script type="text/javascript" src="js/arrow78.js"></script>
+                                <script>
+                                    <!-- Take action if the request on URI has internal link '#' -->
+                                    function internal_link() {
+                                        var urlArray = window.location.href.split('#');
+                                        if (urlArray.length == 2 && urlArray[1] != "") {
+                                            switch (urlArray[1]) {
+                                                case "overview":    $('#tab-1-content').show(); break;
+                                                case "content":     $('#tab-2-content').show(); break;
+                                                case "news":        $('#tab-3-content').show(); break;
+                                                case "assignments": $('#tab-4-content').show(); break;
+                                                case "books":       $('#tab-5-content').show(); break;
+                                                default: break;
+                                            }
+                                        }
+                                    }
+                                internal_link();
+                                    </script>
+                                <script type="text/javascript" src="js/custom.js"/></script>
+
+                                <!-- Google Site Search | Search box-->
+                                <script>
+                                    (function() {
+                                     var cx = '012777421281883581498:8bio77xztpa';
+                                     var gcse = document.createElement('script');
+                                     gcse.type = 'text/javascript';
+                                     gcse.async = true;
+                                     gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                     '//cse.google.com/cse.js?cx=' + cx;
+                                     var s = document.getElementsByTagName('script')[0];
+                                     s.parentNode.insertBefore(gcse, s);
+                                     })();
+                                    </script>
+
+                                </head>
+
+    <body id="page-top" class="index">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button onclick="$('#bs-example-navbar-collapse-2').toggle();" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span><a href="#"><img border="0" width="190" src="images/csucy.png"/></a></span>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="page-scroll">
+                            <a href="#page-top">Home</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="schedule.html">Schedule</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="labs/labs.html">Labs</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#assignments">Assignments</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#books">Books</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="links.html">Links</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a target="_blank" href="http://moodle.cs.ucy.ac.cy/course/info.php?id=42">Moodle</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl371/private">TA</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="presentations.html">Presentations</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- search box submenu -->
+        <div class="collapse" id="bs-example-navbar-collapse-2">
+            <gcse:search></gcse:search>
+                </div>
+
+        <section id="tree" style="margin-top:70px">
+            <div class="container">
+                <a href="../../index.html">Zeinalipour</a> > <a href="../../index.html#courses">Courses</a> > EPL371
+            </div>
+        </section>
+
+
+        <section id="home">
+            <div class="container lead">
+                <h3>EPL371: Systems Programming</h3>
+            </div>
+
+            <div class="container lead">
+                <p><b>Instructor:</b>
+                Demetris Zeinalipour <!--<a onclick="javascript:$('#instructor').toggle();"> &raquo;</a><br>-->
+                <a onclick="$('#instructor').toggle();" class="btn btn-xs btn-success">&raquo;</a><br>
+                <i style="display:none;" id="instructor">
+                    (<a href="../../index.html">Website</a>, Email:
+                    <script language="JavaScript">
+                        <!--
+                        document.write("&nbsp;");
+                        spiderjam('dzeina','cs.ucy.ac.cy');
+                        -->
+                        </script>
+                    , Tel: <a href="tel:0035722892755">22-892755</a>, <i>Office Hours:</i> Tue. 08:30-10:30 in <a target="_blank" href="http://goo.gl/FQCHMl">ΘΕΕ01-B106</a>)<br>
+                </i>
+                <b>Type:</b> Upper-division Undergraduate (Compulsory Course for the Computer Systems &amp; Networks / Software  Engineering Directions)<br>
+                <b>Prerequisite:</b> <a href="https://www.cs.ucy.ac.cy/courses/EPL222">EPL222: Operating Systems</a><br>
+                <b>When:</b> Tue./Fri., 15:00-16:30 in <a target="_blank" href="http://goo.gl/cPEf7j">CTF01-106</a></p>
+                <p><b>Recitations: </b>Wed., 12:00-13:00 in <a target="_blank" href="http://goo.gl/8noJMv">CTF01-001</a><br>
+                <b>Laboratory: </b>Thu., 18:30-20:30 in <a target="_blank" href="http://goo.gl/DLLk2x">FST01-Β103</a><br>
+                <b>Assistant:</b>
+                Pavlos Antoniou<!--<a onclick="javascript:$('#ta').toggle();"> &raquo;</a><br>-->
+                <a onclick="javascript:$('#ta').toggle();" class="btn btn-xs btn-success">&raquo;</a><br>
+                <i style="display:none;" id="ta">
+                    (<a href="http://www.cs.ucy.ac.cy/~csp5pa1/">Website</a>, Email:
+                    <script language="JavaScript">
+                        <!--
+                        document.write("&nbsp;");
+                        spiderjam('paul.antoniou','cs.ucy.ac.cy');
+                        -->
+                        </script>
+                    , Tel: <a href="tel:0035722893927">22-893927</a>, <i>Office Hours:</i> Thu. 16:00-18:00 in <a target="_blank" href="http://goo.gl/a1zSFA">ΘΕΕ01-B109</a>)<br>
+                </i><br>
+                </p>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview">
+            <div class="container lead">
+                <i class="noshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-1-content').toggle();javascript:$('#tab-1-title').toggle();">Overview <span class="glyphicon glyphicon-chevron-right"></span></button>
+                </i>
+                <div class="allshow" style="display:none;" id="tab-1-content">
+                    <hr class="star-primary">
+                    <h3 id="tab-1-title">Overview</h3>
+                    <p>In this course, students will learn to develop complex system-level software in the C programming language while gaining an intimate understanding of the UNIX operating system (and all OS that belong to this family, such as Linux, the BSDs, and even Mac OS X) and its programming environment. Topics covered will include the user/kernel interface, fundamental concepts of UNIX, user authentication, basic and advanced I/O, fileystems, signals, process relationships, and interprocess communication. Fundamental concepts of software development and maintenance on UNIX systems will also be covered. The students are expected to have a good working knowledge of the C programming language (EPL132) and a good working knowledge of fundamental Operating System Concepts (EPL221).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section id="content">
+            <div class="container lead">
+                <i class="noshow" style="display:none;" id="tab-2">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-2-content').toggle();javascript:$('#tab-2-title').toggle();">Content <span class="glyphicon glyphicon-chevron-right"></span></button>
+                </i>
+                <div class="allshow" style="display:none;" id="tab-2-content">
+                    <hr class="star-primary">
+                    <h3 id="tab-2-title">Content</h3>
+                    <p>Main concepts of System Programming, Introductory and Advanced UNIX commands, System utilities and stream editors (awk,sed), Advanced Shell programming with an emphasis on Bash, Low-Level I/O in C, Files and Filesystem, Processes: Environment, Control and Signals, Interprocess Communication (IPC) with an emphasis on Pipes and Named Pipes (FIFO) in C, XSI IPC (Semaphores, Shared Memory and Message Queues) in C, Network IPC (TCP Sockets) and the client/server model in C, Multithreading in C, Performance evaluation (profiling). Issues in system security and system engineering, Systems Programming in Windows (threads, processes, IPC, sockets and Powershell programming), Scripting Languages: Perl, PHP, Python, TCL/TK.<br>
+                    <a target="_blank" href="syllabus.pdf" class="btn btn-primary default">Syllabus (in greek) &raquo;</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <div class="container lead">
+                <i class="noshow" style="display:none;" id="tab-3">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();javascript:$('#tab-3-title').toggle();">News <span class="glyphicon glyphicon-chevron-right"></span></button>
+                </i>
+                <div class="allshow" style="display:none;" id="tab-3-content">
+                    <hr class="star-primary">
+                    <h3 id="tab-3-title">News</h3>
+                    <ul>
+                        <!--<li>
+                         <span class="label label-success">Final</span></li>
+                         <li>
+                         <span class="label label-info">Questionnaires</span></li>
+                         <li>
+                         <span class="label label-warning">AS4</span></li>
+                         <li>
+                         <span class="label label-warning">AS3</span></li>
+                         <li>
+                         <span class="label label-info">Research Talk</span></li>
+                         <li>
+                         <span class="label label-success">Midterm</span></li>
+                         <li>
+                         <span class="label label-warning">AS2</span></li>
+                         <li>
+                         <span class="label label-warning">AS1</span></li>
+                         <li>
+                         <span class="label label-info">Research Talk</span></li>
+                         <li>
+                         <span class="label label-danger">ACM SIGMOD Contest</span> </li>-->
+                        <li><span class="label label-success">Welcome</span> to EPL371!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assignments Section -->
+        <section id="assignments">
+            <div class="container lead">
+                <i class="noshow" style="display:none;" id="tab-4">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-4-content').toggle();javascript:$('#tab-4-title').toggle();">Assignments <span class="glyphicon glyphicon-chevron-right"></span></button>
+                </i>
+                <div class="allshow" style="display:none;" id="tab-4-content">
+                    <hr class="star-primary">
+                    <h3 id="tab-4-title">Assignments</h3>
+                    <p><span class="label label-warning">AS1</span> | Unix Commands | Due: | <a target="_blank" href="assignments/as1.pdf">PDF</a></p>
+                    <p><span class="label label-default">AS2</span> | Bash Programming | Due: | <a target="_blank" href="assignments/as2.pdf">PDF</a> | <a href="assignments/as2-supplementary.zip">ZIP</a></p>
+                    <p><span class="label label-info">AS3</span> | Low Level I/O | Due: | <a target="_blank" href="assignments/as3.pdf">PDF</a> </p>
+                    <p><span class="label label-danger">AS4</span> | High-performance RFC Implementation | Due: | <a target="_blank" href="assignments/as4.pdf">PDF</a> | <a href="assignments/as4-supplementary.zip">ZIP</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books">
+            <div class="container lead">
+                <i class="noshow" style="display:none;" id="tab-5">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Bibliography <span class="glyphicon glyphicon-chevron-right"></span></button>
+                </i>
+                <div class="allshow" style="display:none;" id="tab-5-content">
+                    <hr class="star-primary">
+                    <h3>Main Bibliography</h3>
+                    <ul>
+                        <li><a target="_blank" href="http://www.apuebook.com/apue3e.html">Advanced Programming in the UNIX® Environment</a>, Third Edition, <span class="label label-success">Richard Stevens, Stephen A. Rago</span>, Addison-Wesley, ISBN-10: 0321637739 | ISBN-13: 978-032163773, 2013.</li>
+                        <li><a target="_blank" href="http://highered.mheducation.com/sites/0073376205/information_center_view0/index.html">Your UNIX/Linux: The Ultimate Guide</a>, 3rd Edition, <span class="label label-success">Sumitabha Das</span>, McGraw Hill, ISBN-13 9780073376202, 800 page, 2013.</li>
+                    </ul>
+                    <h3>Supplementary Bibliography</h3>
+                    <ul>
+                        <li><a target="_blank" href="http://www.pearsonhighered.com/pearsonhigheredus/educator/product/products_detail.page?isbn=0130424110">UNIX Systems Programming: Communication, Concurrency and Threads</a>, 2nd Edition, <span class="label label-success">Kay Robbins, Steve Robbins</span>, Prentice Hall, ISBN-10:0130424110 | ISBN-13:9780130424112, 2004.</li>
+                        <li><a target="_blank" href="http://www.unixnetworkprogramming.com/">Unix Network Programming, Volume 1: The Sockets Networking API</a>, 3rd Edition, <span class="label label-success">W. Richard Stevens, Bill Fenner, Andrew M. Rudoff</span>, Addison Wesley Professional, ISBN-10:0131411551 | ISBN-13:9780131411555, 2004.</li>
+                        <li><a target="_blank" href="http://www.apuebook.com/apue3e.html">UNIX Network Programming, Volume 2: Interprocess Communications</a>, 2nd Edition, <span class="label label-success">W. Richard Stevens</span>, Prentice Hall, ISBN-10:0130810819 | ISBN-13:9780130810816, 1999.</li>
+                        <li><a target="_blank" href="http://www.danlj.org/lad/">Linux Application Development</a>, 2nd Edition, <span class="label label-success">Michael K. Johnson, Erik W. Troan</span>, Addison-Wesley, ISBN-10: 0321219147 | ISBN-13: 9780321219145, 2005.</li>
+                        <li><a target="_blank" href="http://www.advancedlinuxprogramming.com/alp-folder">Advanced Linux Programming (free online book)</a>, 1st Edition, <span class="label label-success">Mark Mitchell, Jeffrey Oldham, Alex Samuel</span>, New Riders Publishing, ISBN 0-7357-1043-0, 2001.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </body>
+    <footer>
+        <small>
+            <center>
+                © D. Zeinalipour | Credits: CR template
+                <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                <div style="display:none;" id="credit">
+                    [CR template available under Creative Commons CC BY 4.0 licence: <a href="https://github.com/dmsl/course-responsive-template" target="_blank">https://github.com/dmsl/course-responsive-template</a> ]
+                </div>
+            </center>
+        </small>
+    </footer>
+    
+</html>
