@@ -28,9 +28,9 @@ To use CR on your site, please add the following code at the end of your website
 <footer>
     <small>
     <center>
-        © YEAR | YOURNAME. Credits: AR template
+        © YEAR | YOURNAME. Credits: CR template
     <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
-    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence: 
+    <div style="display:none;" id="credit">[CR template available under Creative Commons CC BY 4.0 licence: 
     <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
         https://github.com/dmsl/academic-responsive-template
     </a> ]
