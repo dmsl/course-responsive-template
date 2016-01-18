@@ -11,9 +11,6 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
-        <!-- Custom -->
-        <link href="css/custom.css" rel="stylesheet"/>
-
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -34,13 +31,16 @@
             <!-- Take action if the request on URI has internal link '#' -->
             function internal_link() {
                 var urlArray = window.location.href.split('#');
+                alert(urlArray);
                 if (urlArray.length == 2 && urlArray[1] != "") {
                     switch (urlArray[1]) {
-                        case "overview":    $('#tab-1-content').show(); break;
-                        case "content":     $('#tab-2-content').show(); break;
-                        case "news":        $('#tab-3-content').show(); break;
-                        case "assignments": $('#tab-4-content').show(); break;
-                        case "books":       $('#tab-5-content').show(); break;
+                        case "overview":      $('#tab-1-content').show(); break;
+                        case "content":       $('#tab-2-content').show(); break;
+                        case "news":          $('#tab-3-content').show(); break;
+                        case "schedule":      $('#tab-4-content').show(); break;
+                        case "assignments":   $('#tab-5-content').show(); break;
+                        case "presentations": $('#tab-6-content').show(); break;
+                        case "books":         $('#tab-7-content').show(); break;
                         default: break;
                     }
                 }
@@ -90,7 +90,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="page-scroll">
-                            <a href="#page-top">Home</a>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#news">News</a>
                         </li>
                         <li class="page-scroll">
                             <a href="schedule.html">Schedule</a>
@@ -99,19 +102,19 @@
                             <a href="labs/labs.html">Labs</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#assignments">Assignments</a>
+                            <a href="index.html#assignments">Assignments</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#books">Books</a>
+                            <a href="index.html#books">Books</a>
                         </li>
                         <li class="page-scroll">
                             <a href="links.html">Links</a>
                         </li>
                         <li class="page-scroll">
-                            <a target="_blank" href="http://moodle.cs.ucy.ac.cy/course/info.php?id=42">Moodle</a>
+                            <a href="presentations.html">Presentations</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="presentations.html">Presentations</a>
+                            <a target="_blank" href="http://moodle.cs.ucy.ac.cy/course/info.php?id=42">Moodle</a>
                         </li>
                         <li class="page-scroll">
                             <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl371/private">TA</a>
@@ -254,10 +257,10 @@
         <!-- Schedule Section -->
         <section id="schedule">
             <div class="container lead">
-                <i class="noshow" style="display:none;" id="tab-5">
+                <i class="noshow" style="display:none;" id="tab-4">
                     <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="location.reload();location.href='schedule.html'">Schedule <span class="glyphicon glyphicon-chevron-right"></span></button>
                 </i>
-                <div class="allshow" style="display:none;" id="tab-6-content">
+                <div class="allshow" style="display:none;" id="tab-4-content">
                 <hr class="star-primary">
                 <h3>Schedule <a href="schedule.html" class="btn btn-xs btn-success">&raquo;</a></h3>
                 </div>
@@ -267,10 +270,10 @@
         <!-- Lab Section -->
         <section id="laboratory">
             <div class="container lead">
-                <i class="noshow" style="display:none;" id="tab-6">
+                <i class="noshow" style="display:none;" id="tab-5">
                     <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="location.reload();location.href='labs/labs   .html'">Laboratory <span class="glyphicon glyphicon-chevron-right"></span></button>
                 </i>
-                <div class="allshow" style="display:none;" id="tab-6-content">
+                <div class="allshow" style="display:none;" id="tab-5-content">
                 <hr class="star-primary">
                 <h3>Laboratory <a href="labs/labs.html" class="btn btn-xs btn-success">&raquo;</a></h3>
                 </div>
@@ -280,12 +283,12 @@
         <!-- Assignments Section -->
         <section id="assignments">
             <div class="container lead">
-                <i class="noshow" style="display:none;" id="tab-7">
-                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-7-content').toggle();javascript:$('#tab-7-title').toggle();">Assignments <span class="glyphicon glyphicon-chevron-right"></span></button>
+                <i class="noshow" style="display:none;" id="tab-6">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();javascript:$('#tab-6-title').toggle();">Assignments <span class="glyphicon glyphicon-chevron-right"></span></button>
                 </i>
-                <div class="allshow" style="display:none;" id="tab-7-content">
+                <div class="allshow" style="display:none;" id="tab-6-content">
                     <hr class="star-primary">
-                    <h3 id="tab-7-title">Assignments</h3>
+                    <h3 id="tab-6-title">Assignments</h3>
                     <p><span class="label label-warning">AS1</span> | Unix Commands | Due: | <a target="_blank" href="assignments/as1.pdf">PDF</a></p>
                     <p><span class="label label-default">AS2</span> | Bash Programming | Due: | <a target="_blank" href="assignments/as2.pdf">PDF</a> | <a href="assignments/as2-supplementary.zip">ZIP</a></p>
                     <p><span class="label label-info">AS3</span> | Low Level I/O | Due: | <a target="_blank" href="assignments/as3.pdf">PDF</a> </p>
@@ -297,10 +300,10 @@
         <!-- News Section -->
         <section id="presentations">
             <div class="container lead">
-                <i class="noshow" style="display:none;" id="tab-8">
+                <i class="noshow" style="display:none;" id="tab-7">
                     <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="location.reload();location.href='presentations.html'">Presentations <span class="glyphicon glyphicon-chevron-right"></span></button>
                 </i>
-                <div class="allshow" style="display:none;" id="tab-8-content">
+                <div class="allshow" style="display:none;" id="tab-7-content">
                     <hr class="star-primary">
                     <h3>Presentations <a href="readings.html" class="btn btn-xs btn-success">&raquo;</a></h3>
                 </div>
@@ -310,10 +313,10 @@
         <!-- Books Section -->
         <section id="books">
             <div class="container lead">
-                <i class="noshow" style="display:none;" id="tab-9">
-                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-9-content').toggle();">Bibliography <span class="glyphicon glyphicon-chevron-right"></span></button>
+                <i class="noshow" style="display:none;" id="tab-8">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Bibliography <span class="glyphicon glyphicon-chevron-right"></span></button>
                 </i>
-                <div class="allshow" style="display:none;" id="tab-9-content">
+                <div class="allshow" style="display:none;" id="tab-8-content">
                     <hr class="star-primary">
                     <h3>Main Bibliography</h3>
                     <ul>
