@@ -36,9 +36,10 @@ function internal_link() {
             case "content":       $('#tab-2-content').show(); break;
             case "news":          $('#tab-3-content').show(); break;
             case "schedule":      $('#tab-4-content').show(); break;
-            case "assignments":   $('#tab-5-content').show(); break;
-            case "presentations": $('#tab-6-content').show(); break;
-            case "books":         $('#tab-7-content').show(); break;
+            case "laboratory":    $('#tab-5-content').show(); break;
+            case "assignments":   $('#tab-6-content').show(); break;
+            case "presentations": $('#tab-7-content').show(); break;
+            case "books":         $('#tab-8-content').show(); break;
             default: break;
         }
     }

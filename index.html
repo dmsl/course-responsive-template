@@ -4,10 +4,8 @@
         <meta charset="utf-8"/>
         <title>[ EPL371 - Systems Programming @ UCY ]</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
-
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
         <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
@@ -48,7 +46,6 @@
                         <span><a href="#"><img border="0" width="170" src="images/csucy.png"/></a></span>
                     </div>
 
-
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
@@ -56,17 +53,18 @@
                                 <a href="#">Home</a>
                             </li>
                             <li class="page-scroll">
-                                <a href="#news">News</a>
+                                <a onclick="javascript:reset_menus();$('#tab-3-content').show();" href="#news">News</a>
                             </li>
                             <li class="page-scroll">
-                                <a href="schedule.html">Schedule</a>
+                                <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="schedule.html">Schedule</a>
                             </li>
                             <li class="page-scroll">
                                 <a href="labs/labs.html">Labs</a>
                             </li>
                             <li class="page-scroll">
-                                <a href="index.html#assignments">Assignments</a>
+                                <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#assignments">Assignments</a>
                             </li>
+
                             <li class="page-scroll">
                                 <a href="links.html">Links</a>
                             </li>
